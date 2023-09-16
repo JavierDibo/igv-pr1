@@ -1,0 +1,10 @@
+include(default)
+[settings]
+arch=x86_64
+os=Windows
+compiler=gcc
+compiler.version=13
+compiler.cppstd=14
+build_type=Debug
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja

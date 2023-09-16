@@ -1,0 +1,298 @@
+C:\Users\jfdg0\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/jfdg0/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G Ninja -S C:\Users\jfdg0\Desktop\pr1_conan\pr1_conan -B C:\Users\jfdg0\Desktop\pr1_conan\pr1_conan\cmake-build-debug
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/jfdg0/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/jfdg0/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMake-Conan: first find_package() found. Installing dependencies with Conan
+-- CMake-Conan: Checking if a default profile exists
+ERROR: Profile not found: default
+-- CMake-Conan: The default profile doesn't exist, detecting it.
+Found gcc 13.1
+gcc>=5, using the major as version
+gcc C++ standard library: libstdc++11
+WARN: This profile is a guess of your environment, please check it.
+WARN: The output of this command is not guaranteed to be stable and can change in future Conan versions.
+WARN: Use your own profile files for stability.
+Saving detected profile to C:\Users\jfdg0\.conan2\profiles\default
+Detected profile:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Windows
+
+-- CMake-Conan: cmake_system_name=Windows
+-- CMake-Conan: cmake_system_processor=x86_64
+-- CMake-Conan: CMake compiler=GNU
+-- CMake-Conan: CMake compiler version=13.1.0
+-- CMake-Conan: [settings] compiler=gcc
+-- CMake-Conan: [settings] compiler.version=13
+-- CMake-Conan: Creating profile C:/Users/jfdg0/Desktop/pr1_conan/pr1_conan/cmake-build-debug/conan_host_profile
+-- CMake-Conan: Profile: 
+include(default)
+[settings]
+arch=x86_64
+os=Windows
+compiler=gcc
+compiler.version=13
+compiler.cppstd=14
+build_type=Debug
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+
+-- CMake-Conan: Installing single configuration Debug
+-- CMake-Conan: conan install C:/Users/jfdg0/Desktop/pr1_conan/pr1_conan -of=C:/Users/jfdg0/Desktop/pr1_conan/pr1_conan/cmake-build-debug/conan -pr;C:/Users/jfdg0/Desktop/pr1_conan/pr1_conan/cmake-build-debug/conan_host_profile;--build=missing;-g;CMakeDeps
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Debug
+compiler=gcc
+compiler.cppstd=14
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Windows
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu17
+compiler.libcxx=libstdc++11
+compiler.version=13
+os=Windows
+
+
+======== Computing dependency graph ========
+opengl-registry/cci.20220929: Not found in local cache, looking in remotes...
+opengl-registry/cci.20220929: Checking remote: conancenter
+opengl-registry/cci.20220929: Downloaded recipe revision ade8c44dc6965559f5a1cf35f46c4303
+khrplatform/cci.20200529: Not found in local cache, looking in remotes...
+khrplatform/cci.20200529: Checking remote: conancenter
+khrplatform/cci.20200529: Downloaded recipe revision eec32d0f1ddfbf78a41c67c621783196
+opengl/system: Not found in local cache, looking in remotes...
+opengl/system: Checking remote: conancenter
+opengl/system: Downloaded recipe revision b29589c04d6df84c110d6acb066ab653
+freeglut/3.4.0: Not found in local cache, looking in remotes...
+freeglut/3.4.0: Checking remote: conancenter
+freeglut/3.4.0: Downloaded recipe revision faa2b8377286ee578be419cbecadd8ab
+glu/system: Not found in local cache, looking in remotes...
+glu/system: Checking remote: conancenter
+glu/system: Downloaded recipe revision ee50fc2ade0e1c0c8ebb3be3ea60e0f5
+Graph root
+    conanfile.py: C:/Users/jfdg0/Desktop/pr1_conan/pr1_conan\conanfile.py
+Requirements
+    freeglut/3.4.0#faa2b8377286ee578be419cbecadd8ab - Downloaded (conancenter)
+    glu/system#ee50fc2ade0e1c0c8ebb3be3ea60e0f5 - Downloaded (conancenter)
+    khrplatform/cci.20200529#eec32d0f1ddfbf78a41c67c621783196 - Downloaded (conancenter)
+    opengl/system#b29589c04d6df84c110d6acb066ab653 - Downloaded (conancenter)
+    opengl-registry/cci.20220929#ade8c44dc6965559f5a1cf35f46c4303 - Downloaded (conancenter)
+
+======== Computing necessary packages ========
+Requirements
+    freeglut/3.4.0#faa2b8377286ee578be419cbecadd8ab:ed736eed206dc90466f85ab14a5143e88bfcbf63 - Build
+    glu/system#ee50fc2ade0e1c0c8ebb3be3ea60e0f5:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Download (conancenter)
+    khrplatform/cci.20200529#eec32d0f1ddfbf78a41c67c621783196:da39a3ee5e6b4b0d3255bfef95601890afd80709#f6ca34b0055eeb66de8e0cb09c284e44 - Download (conancenter)
+    opengl-registry/cci.20220929#ade8c44dc6965559f5a1cf35f46c4303:da39a3ee5e6b4b0d3255bfef95601890afd80709#26f580fe059036ad87647726361c788f - Download (conancenter)
+    opengl/system#b29589c04d6df84c110d6acb066ab653:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Download (conancenter)
+
+======== Installing packages ========
+
+-------- Downloading 4 packages --------
+khrplatform/cci.20200529: Retrieving package da39a3ee5e6b4b0d3255bfef95601890afd80709 from remote 'conancenter' 
+khrplatform/cci.20200529: Package installed da39a3ee5e6b4b0d3255bfef95601890afd80709
+khrplatform/cci.20200529: Downloaded package revision f6ca34b0055eeb66de8e0cb09c284e44
+opengl/system: Retrieving package da39a3ee5e6b4b0d3255bfef95601890afd80709 from remote 'conancenter' 
+opengl/system: Package installed da39a3ee5e6b4b0d3255bfef95601890afd80709
+opengl/system: Downloaded package revision 0ba8627bd47edc3a501e8f0eb9a79e5e
+glu/system: Retrieving package da39a3ee5e6b4b0d3255bfef95601890afd80709 from remote 'conancenter' 
+glu/system: Package installed da39a3ee5e6b4b0d3255bfef95601890afd80709
+glu/system: Downloaded package revision 0ba8627bd47edc3a501e8f0eb9a79e5e
+opengl-registry/cci.20220929: Retrieving package da39a3ee5e6b4b0d3255bfef95601890afd80709 from remote 'conancenter' 
+opengl-registry/cci.20220929: Package installed da39a3ee5e6b4b0d3255bfef95601890afd80709
+opengl-registry/cci.20220929: Downloaded package revision 26f580fe059036ad87647726361c788f
+freeglut/3.4.0: Calling source() in C:\Users\jfdg0\.conan2\p\freeg73409e6067337\s\src
+
+-------- Installing package freeglut/3.4.0 (5 of 5) --------
+freeglut/3.4.0: Building from source
+freeglut/3.4.0: Package freeglut/3.4.0:ed736eed206dc90466f85ab14a5143e88bfcbf63
+freeglut/3.4.0: Copying sources to build folder
+freeglut/3.4.0: Building your package in C:\Users\jfdg0\.conan2\p\b\freegce335745f9483\b
+freeglut/3.4.0: Calling generate()
+freeglut/3.4.0: Generators folder: C:\Users\jfdg0\.conan2\p\b\freegce335745f9483\b\build\Debug\generators
+freeglut/3.4.0: CMakeToolchain generated: conan_toolchain.cmake
+freeglut/3.4.0: CMakeToolchain generated: CMakePresets.json
+freeglut/3.4.0: CMakeToolchain generated: ..\..\..\src\CMakeUserPresets.json
+freeglut/3.4.0: Generating aggregated env files
+freeglut/3.4.0: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+freeglut/3.4.0: Calling build()
+freeglut/3.4.0: Running CMake.configure()
+freeglut/3.4.0: RUN: cmake -G "Ninja" -DCMAKE_TOOLCHAIN_FILE="C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/b/build/Debug/generators/conan_toolchain.cmake" -DCMAKE_INSTALL_PREFIX="C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p" -DCMAKE_POLICY_DEFAULT_CMP0091="NEW" -DCMAKE_BUILD_TYPE="Debug" "C:\Users\jfdg0\.conan2\p\b\freegce335745f9483\b\src"
+CMake Deprecation Warning at CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Using Conan toolchain: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/b/build/Debug/generators/conan_toolchain.cmake
+-- Conan toolchain: Setting BUILD_SHARED_LIBS = OFF
+-- The C compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/jfdg0/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found OpenGL: opengl32   
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file sys/time.h
+-- Looking for include file sys/time.h - found
+-- Looking for include file stdbool.h
+-- Looking for include file stdbool.h - found
+-- Looking for include file sys/param.h
+-- Looking for include file sys/param.h - found
+-- Looking for include file sys/ioctl.h
+-- Looking for include file sys/ioctl.h - not found
+-- Looking for include file fcntl.h
+-- Looking for include file fcntl.h - found
+-- Looking for include file usbhid.h
+-- Looking for include file usbhid.h - not found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for XParseGeometry
+-- Looking for XParseGeometry - not found
+-- Looking for include file stdint.h
+-- Looking for include file stdint.h - found
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Configuring done (5.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/b/build/Debug
+
+freeglut/3.4.0: Running CMake.build()
+freeglut/3.4.0: RUN: cmake --build "C:\Users\jfdg0\.conan2\p\b\freegce335745f9483\b\build\Debug" -- -j6
+[1/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_cursor.c.obj
+[2/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_gamemode.c.obj
+[3/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_ext.c.obj
+[4/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_display.c.obj
+[5/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_font_data.c.obj
+[6/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_callbacks.c.obj
+[7/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_init.c.obj
+[8/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_main.c.obj
+[9/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_input_devices.c.obj
+[10/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_gl2.c.obj
+[11/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_misc.c.obj
+[12/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_geometry.c.obj
+[13/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_joystick.c.obj
+[14/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_state.c.obj
+[15/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_overlay.c.obj
+[16/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_spaceball.c.obj
+[17/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_stroke_roman.c.obj
+[18/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_stroke_mono_roman.c.obj
+[19/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_structure.c.obj
+[20/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_teapot.c.obj
+[21/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_window.c.obj
+[22/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_videoresize.c.obj
+[23/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_menu.c.obj
+[24/41] Building C object CMakeFiles/freeglut_static.dir/src/fg_font.c.obj
+[25/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_cursor_mswin.c.obj
+[26/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_input_devices_mswin.c.obj
+[27/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_ext_mswin.c.obj
+[28/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_display_mswin.c.obj
+[29/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_init_mswin.c.obj
+[30/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_gamemode_mswin.c.obj
+[31/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_joystick_mswin.c.obj
+[32/41] Building RC object CMakeFiles/freeglut_static.dir/freeglut.rc.obj
+[33/41] Building C object CMakeFiles/freeglut_static.dir/src/util/xparsegeometry_repl.c.obj
+[34/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_structure_mswin.c.obj
+[35/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_spaceball_mswin.c.obj
+C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/b/src/src/mswin/fg_spaceball_mswin.c: In function 'fgSpaceballHandleWinEvent':
+C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/b/src/src/mswin/fg_spaceball_mswin.c:177:30: warning: unused variable 'state' [-Wunused-variable]
+  177 |                 unsigned int state = GLUT_UP;
+      |                              ^~~~~
+C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/b/src/src/mswin/fg_spaceball_mswin.c:109:10: warning: unused variable 'inputCode' [-Wunused-variable]
+  109 |     UINT inputCode = (UINT)wParam;
+      |          ^~~~~~~~~
+[36/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_state_mswin.c.obj
+[37/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_main_mswin.c.obj
+[38/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_menu_mswin.c.obj
+[39/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_cmap_mswin.c.obj
+[40/41] Building C object CMakeFiles/freeglut_static.dir/src/mswin/fg_window_mswin.c.obj
+[41/41] Linking C static library lib\libglut.a
+
+freeglut/3.4.0: Package 'ed736eed206dc90466f85ab14a5143e88bfcbf63' built
+freeglut/3.4.0: Build folder C:\Users\jfdg0\.conan2\p\b\freegce335745f9483\b\build\Debug
+freeglut/3.4.0: Generating the package
+freeglut/3.4.0: Packaging in folder C:\Users\jfdg0\.conan2\p\b\freegce335745f9483\p
+freeglut/3.4.0: Calling package()
+freeglut/3.4.0: Running CMake.install()
+freeglut/3.4.0: RUN: cmake --install "C:\Users\jfdg0\.conan2\p\b\freegce335745f9483\b\build\Debug" --prefix "C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p"
+-- Install configuration: "Debug"
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/lib/libglut.a
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/include/GL/freeglut.h
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/include/GL/freeglut_ucall.h
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/include/GL/freeglut_ext.h
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/include/GL/freeglut_std.h
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/include/GL/glut.h
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/lib/pkgconfig/glut.pc
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/lib/cmake/FreeGLUT/FreeGLUTTargets.cmake
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/lib/cmake/FreeGLUT/FreeGLUTTargets-debug.cmake
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/lib/cmake/FreeGLUT/FreeGLUTConfig.cmake
+-- Installing: C:/Users/jfdg0/.conan2/p/b/freegce335745f9483/p/lib/cmake/FreeGLUT/FreeGLUTConfigVersion.cmake
+
+freeglut/3.4.0: package(): Packaged 5 '.h' files
+freeglut/3.4.0: package(): Packaged 1 '.a' file: libglut.a
+freeglut/3.4.0: package(): Packaged 1 file: COPYING
+freeglut/3.4.0: Created package revision 83b1af2d5f4f72a49cf4e935d0db0556
+freeglut/3.4.0: Package 'ed736eed206dc90466f85ab14a5143e88bfcbf63' created
+freeglut/3.4.0: Full package reference: freeglut/3.4.0#faa2b8377286ee578be419cbecadd8ab:ed736eed206dc90466f85ab14a5143e88bfcbf63#83b1af2d5f4f72a49cf4e935d0db0556
+freeglut/3.4.0: Package folder C:\Users\jfdg0\.conan2\p\b\freegce335745f9483\p
+WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
+WARN: deprecated:     'cpp_info.filenames' used in: opengl/system
+WARN: deprecated:     'cpp_info.names' used in: freeglut/3.4.0
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py: Writing generators to C:\Users\jfdg0\Desktop\pr1_conan\pr1_conan\cmake-build-debug\conan\build\Debug\generators
+conanfile.py: Generator 'CMakeDeps' calling 'generate()'
+conanfile.py: Calling generate()
+conanfile.py: Generators folder: C:\Users\jfdg0\Desktop\pr1_conan\pr1_conan\cmake-build-debug\conan\build\Debug\generators
+conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py: Preset 'conan-debug' added to CMakePresets.json. Invoke it manually using 'cmake --preset conan-debug' if using CMake>=3.23
+conanfile.py: If your CMake version is not compatible with CMakePresets (<3.23) call cmake like: 'cmake <path> -G Ninja -DCMAKE_TOOLCHAIN_FILE=C:\Users\jfdg0\Desktop\pr1_conan\pr1_conan\cmake-build-debug\conan\build\Debug\generators\conan_toolchain.cmake -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Debug'
+conanfile.py: CMakeToolchain generated: CMakePresets.json
+conanfile.py: Generating aggregated env files
+conanfile.py: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+Install finished successfully
+-- CMake-Conan: CONAN_GENERATORS_FOLDER=C:\Users\jfdg0\Desktop\pr1_conan\pr1_conan\cmake-build-debug\conan\build\Debug\generators
+-- CMake-Conan: CONANFILE=C:/Users/jfdg0/Desktop/pr1_conan/pr1_conan/conanfile.py
+-- Conan: Target declared 'opengl::opengl'
+-- CMake-Conan: find_package(opengl-registry) found, 'conan install' already ran
+-- Conan: Target declared 'opengl-registry::opengl-registry'
+-- CMake-Conan: find_package(khrplatform) found, 'conan install' already ran
+-- Conan: Target declared 'khrplatform::khrplatform'
+-- CMake-Conan: find_package(FreeGLUT) found, 'conan install' already ran
+-- Conan: Component target declared 'FreeGLUT::freeglut_static'
+-- CMake-Conan: find_package(glu) found, 'conan install' already ran
+-- Conan: Target declared 'glu::glu'
+-- Configuring done (32.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/jfdg0/Desktop/pr1_conan/pr1_conan/cmake-build-debug
